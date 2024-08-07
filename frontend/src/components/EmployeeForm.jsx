@@ -41,7 +41,11 @@ const EmployeeForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <section>
+      <div className="container">
+        <div className="row">
+       
+    <form onSubmit={handleSubmit} className='col-lg-6'>
       <input
         type="text"
         value={name}
@@ -72,6 +76,10 @@ const EmployeeForm = () => {
       />
       <button type="submit">{id ? 'Update' : 'Create'} Employee</button>
     </form>
+       
+    </div>
+      </div>
+    </section>
   );
 };
 
